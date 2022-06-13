@@ -1,10 +1,10 @@
 import React from 'react';
-import FakeTwitter from "./FakeTwitter";
+// import FakeTwitter from "./FakeTwitter";
 
 function App() {
     return (
         <div>
-            <FakeTwitter></FakeTwitter>
+            This is new App
         </div>
     )
 }

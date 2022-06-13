@@ -18,7 +18,7 @@ app.use("/tweets", tweetRoute);
 app.use(express.static(path.join(__dirname, "client", "build")));
 
 mongoose.Promise = global.Promise;
-mongoose.connect("mongo 'mongodb+srv://cluster0.mqasazh.mongodb.net/myFirstDatabase' --username dparsad", { useMongoClient: true }, (err) => {
+mongoose.connect(process.env.MONGODB_URI, { useMongoClient: true }, (err) => {
     if (err) console.error(err);
 });
 
